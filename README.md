@@ -1,9 +1,10 @@
-<p align="center"><img src="https://bench.instantnode.eu/oss/blip/banner.png" alt="blip, the smallest uptime monitor"></p>
+<p align="center"><img src="assets/banner.png" alt="blip, the smallest uptime monitor"></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-3fb950?style=flat-square" alt="license MIT">
   <img src="https://img.shields.io/badge/written%20in-Rust-3fb950?style=flat-square" alt="Rust">
-  <img src="https://img.shields.io/badge/platform-linux-3fb950?style=flat-square" alt="linux">
+  <a href="https://github.com/instantnodeeu/blip/releases"><img src="https://img.shields.io/github/v/release/instantnodeeu/blip?style=flat-square&color=3fb950" alt="release"></a>
+  <a href="https://github.com/instantnodeeu/blip/stargazers"><img src="https://img.shields.io/github/stars/instantnodeeu/blip?style=flat-square&color=3fb950" alt="stars"></a>
   <a href="https://instantnode.eu"><img src="https://img.shields.io/badge/by-InstantNode-3fb950?style=flat-square" alt="by InstantNode"></a>
 </p>
 
@@ -15,8 +16,8 @@ It is meant to be small enough that you never think about where to run it.
 A spare corner of any VPS, a Raspberry Pi or a 64 MB container is plenty.
 
 <p align="center">
-  <img src="https://bench.instantnode.eu/oss/blip/status-light.png" width="420" alt="status page, light">
-  <img src="https://bench.instantnode.eu/oss/blip/status-dark.png" width="420" alt="status page, dark">
+  <img src="assets/status-light.png" width="420" alt="status page, light">
+  <img src="assets/status-dark.png" width="420" alt="status page, dark">
 </p>
 
 ## Numbers
@@ -38,7 +39,7 @@ towards its RSS. The release binaries are the static musl ones.
 For comparison, a fresh Uptime Kuma 2 container with no monitors configured
 sat at 107 MiB on the same machine (`docker stats`).
 
-<p align="center"><img src="https://bench.instantnode.eu/oss/blip/memory.png" alt="memory use compared to Uptime Kuma"></p>
+<p align="center"><img src="assets/memory.png" alt="memory use compared to Uptime Kuma"></p>
 
 That isn't a knock on Kuma, which does a lot more. If you want a web UI to
 click monitors together, maintenance windows and 90 notification providers,
