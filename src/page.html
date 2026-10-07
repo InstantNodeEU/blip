@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="60">
+<title><!--title--></title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='5' fill='%233b9b5c'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f7f7f5; --fg: #1d1d1b; --mute: #76746f; --line: #e4e3df;
+  --up: #3b9b5c; --warn: #d39a2c; --down: #cf4a3f; --none: #dfded9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131312; --fg: #e8e6e1; --mute: #8f8c86; --line: #262523;
+    --up: #46a86a; --warn: #d6a540; --down: #df5c51; --none: #2c2b29;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+h2 { font-size: 13px; font-weight: 600; color: var(--mute); margin: 36px 0 4px; }
+a { color: inherit; }
+.summary { margin: 0; font-size: 17px; }
+.hint { margin: 2px 0 0; color: var(--mute); font-size: 13px; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 9px; vertical-align: 1px; background: var(--none); }
+.dot.up { background: var(--up); }
+.dot.down { background: var(--down); }
+.check { padding: 14px 0 16px; border-bottom: 1px solid var(--line); }
+.row { display: flex; justify-content: space-between; gap: 12px; }
+.name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meta { color: var(--mute); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bars { display: flex; gap: 2px; height: 26px; margin-top: 9px; }
+.bars i { flex: 1; min-width: 1px; border-radius: 2px; background: var(--none); }
+.bars i.u { background: var(--up); }
+.bars i.w { background: var(--warn); }
+.bars i.d { background: var(--down); }
+.bars i:hover { opacity: .65; }
+.events ul { list-style: none; margin: 0; padding: 0; }
+.events li { display: flex; gap: 18px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.events time { color: var(--mute); font-variant-numeric: tabular-nums; white-space: nowrap; }
+footer { margin-top: 44px; color: var(--mute); font-size: 13px; }
+@media (max-width: 520px) {
+  main { padding-top: 32px; }
+  .bars { gap: 1px; }
+  .events li { flex-direction: column; gap: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<!--body-->
+</main>
+</body>
+</html>
