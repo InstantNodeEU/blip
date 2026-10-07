@@ -20,7 +20,7 @@ idna_adapter = "=1.0.0"
 debug = false
 
 [profile.release]
-opt-level = "s"
+opt-level = "z"
 lto = true
 codegen-units = 1
 panic = "abort"
