@@ -1,5 +1,12 @@
 <p align="center"><img src="assets/banner.png" alt="blip, the smallest uptime monitor"></p>
 
+<p align="center">
+  <a href="https://github.com/luxend1337/blip/stargazers"><img src="https://img.shields.io/github/stars/luxend1337/blip?style=flat-square&color=3fb950" alt="stars"></a>
+  <a href="https://github.com/luxend1337/blip/releases"><img src="https://img.shields.io/github/v/release/luxend1337/blip?style=flat-square&color=3fb950" alt="release"></a>
+  <a href="https://github.com/luxend1337/blip/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/luxend1337/blip/ci.yml?style=flat-square&label=build" alt="build"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/luxend1337/blip?style=flat-square" alt="license"></a>
+</p>
+
 blip watches your websites, ports and hosts and serves a status page. It is a
 single static binary with SQLite built in. There is nothing to install next to
 it: no runtime, no database server, no node_modules.
