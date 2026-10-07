@@ -1,0 +1,26 @@
+[Unit]
+Description=blip uptime monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/blip /etc/blip/blip.conf
+WorkingDirectory=/var/lib/blip
+StateDirectory=blip
+DynamicUser=yes
+Restart=on-failure
+MemoryMax=32M
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target
