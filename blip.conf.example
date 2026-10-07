@@ -1,0 +1,32 @@
+# blip config. Copy to blip.conf and edit.
+
+title = Status
+listen = 127.0.0.1:8080
+db = blip.db
+# keep_days = 90
+
+[notify]
+# Any of these can be left out.
+# webhook = https://example.com/hooks/blip
+# discord = https://discord.com/api/webhooks/123/abc
+# telegram_token = 123456:ABC-DEF
+# telegram_chat = -1001234567890
+
+[check "Website"]
+url = https://example.com
+group = Web
+# expect = 200
+# keyword = Example Domain
+# interval = 60s
+# retry_interval = 20s
+# timeout = 10s
+# retries = 2
+
+[check "SSH"]
+url = tcp://example.com:22
+group = Servers
+interval = 2m
+
+[check "Gateway"]
+url = ping://192.168.1.1
+group = Network
