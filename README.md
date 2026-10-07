@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/written%20in-Rust-3fb950?style=flat-square" alt="Rust">
   <a href="https://github.com/instantnodeeu/blip/releases"><img src="https://img.shields.io/github/v/release/instantnodeeu/blip?style=flat-square&color=3fb950" alt="release"></a>
   <a href="https://github.com/instantnodeeu/blip/stargazers"><img src="https://img.shields.io/github/stars/instantnodeeu/blip?style=flat-square&color=3fb950" alt="stars"></a>
+  <a href="https://github.com/instantnodeeu/blip/actions"><img src="https://img.shields.io/github/actions/workflow/status/instantnodeeu/blip/ci.yml?style=flat-square&label=build&color=3fb950" alt="build"></a>
   <a href="https://instantnode.eu"><img src="https://img.shields.io/badge/by-InstantNode-3fb950?style=flat-square" alt="by InstantNode"></a>
 </p>
 
