@@ -61,7 +61,7 @@ email (use the webhook with something that sends mail). That is on purpose.
 
 ## Quick start
 
-Grab a binary from the [releases](https://github.com/instantnode/blip/releases),
+Grab a binary from the [releases](https://github.com/instantnodeeu/blip/releases),
 or build it yourself:
 
 ```sh

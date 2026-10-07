@@ -256,7 +256,7 @@ fn page(app: &App) -> String {
 
     let _ = write!(
         b,
-        "<footer>Updated {}. Powered by <a href=\"https://github.com/instantnode/blip\">blip</a>.</footer>",
+        "<footer>Updated {}. Powered by <a href=\"https://github.com/instantnodeeu/blip\">blip</a>.</footer>",
         text::timestamp(now())
     );
 

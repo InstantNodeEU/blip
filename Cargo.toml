@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "A tiny self-hosted uptime monitor with a status page"
 license = "MIT"
-repository = "https://github.com/instantnode/blip"
+repository = "https://github.com/instantnodeeu/blip"
 
 [dependencies]
 libc = "0.2"
