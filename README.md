@@ -63,7 +63,21 @@ email (use the webhook with something that sends mail). That is on purpose.
 
 ## Quick start
 
-Grab a binary from the [releases](https://github.com/instantnodeeu/blip/releases),
+On a systemd box:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/instantnodeeu/blip/main/install.sh | sudo sh
+nano /etc/blip/blip.conf
+systemctl enable --now blip
+```
+
+The script puts the latest release in `/usr/local/bin` after checking its sha256,
+writes the example config to `/etc/blip/blip.conf` if there is none yet and
+installs the service from `contrib/`. Run it again to update, a running service
+is restarted. Without `sudo` it only puts the binary in `~/.local/bin`.
+`VERSION=v0.1.0` pins a release.
+
+Or grab a binary from the [releases](https://github.com/instantnodeeu/blip/releases),
 or build it yourself:
 
 ```sh
@@ -76,7 +90,9 @@ Then open http://127.0.0.1:8080.
 
 `blip -t blip.conf` checks the config without starting anything.
 
-### systemd
+### systemd by hand
+
+The same without the script:
 
 ```sh
 install -m 755 blip /usr/local/bin/
